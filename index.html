@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Coleção de Criações</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600&display=swap');
+
+  :root{
+    --bg: #F6F5F1;
+    --bg-card: #FFFFFF;
+    --ink: #1B1D1A;
+    --ink-soft: #63665F;
+    --line: #E1DED4;
+    --accent-math: #4A5FA0;
+    --accent-math-soft: #E7EAF5;
+    --accent-bike: #5A7A3E;
+    --accent-bike-soft: #E9F0E1;
+  }
+
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; background:var(--bg); color:var(--ink);
+    font-family:'Inter',system-ui,sans-serif; }
+
+  .wrap{ max-width:720px; margin:0 auto; padding:64px 28px 120px; }
+
+  .kicker{ font-size:14px; color:var(--ink-soft); margin-bottom:18px; }
+
+  h1{
+    font-family:'Newsreader', serif;
+    font-weight:500;
+    font-size:38px;
+    line-height:1.18;
+    letter-spacing:-0.01em;
+    margin:0 0 20px;
+    max-width:16ch;
+  }
+
+  .lede{
+    font-size:18px;
+    line-height:1.6;
+    color:var(--ink-soft);
+    max-width:56ch;
+    margin:0 0 56px;
+  }
+
+  .card{
+    background:var(--bg-card);
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:32px;
+    margin-bottom:28px;
+  }
+
+  .card-label{
+    display:inline-block;
+    font-size:13px;
+    font-weight:600;
+    padding:4px 10px;
+    border-radius:6px;
+    margin-bottom:16px;
+  }
+  .card.math .card-label{ background:var(--accent-math-soft); color:var(--accent-math); }
+  .card.bike .card-label{ background:var(--accent-bike-soft); color:var(--accent-bike); }
+
+  h2{
+    font-family:'Newsreader', serif;
+    font-weight:500;
+    font-size:24px;
+    margin:0 0 14px;
+  }
+
+  p{ font-size:16px; line-height:1.7; color:var(--ink); margin:0 0 14px; }
+  p.soft{ color:var(--ink-soft); }
+
+  .placeholder-box{
+    border:1.5px dashed var(--line);
+    border-radius:10px;
+    padding:16px 18px;
+    font-size:14px;
+    color:var(--ink-soft);
+    margin-top:12px;
+  }
+
+  a.link-btn{
+    display:inline-block;
+    margin-top:10px;
+    font-size:14px;
+    font-weight:600;
+    text-decoration:none;
+    padding:8px 14px;
+    border-radius:8px;
+  }
+  .card.math a.link-btn{ background:var(--accent-math); color:#fff; }
+  .card.bike a.link-btn{ background:var(--accent-bike); color:#fff; }
+
+  .note{
+    border-left:3px solid var(--ink-soft);
+    padding:14px 18px;
+    background:#EFEEE8;
+    border-radius:0 8px 8px 0;
+    font-size:14px;
+    color:#4A4C46;
+    margin-top:40px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">Coleção de criações</div>
+  <h1>Coisas que faço fora do currículo</h1>
+  <p class="lede">
+    Duas coisas que faço por gosto próprio, sem nenhuma obrigação de curso ou trabalho.
+  </p>
+
+  <div class="card math">
+    <span class="card-label">Matemática</span>
+    <h2>Curiosidade por entender teoremas e ideias por trás dos números</h2>
+    <p>
+      Gosto de resolver curiosidades e teoremas por conta própria — não pela nota
+      ou pela prova, mas pelo prazer de entender por que algo funciona, não apenas
+      na matematica mas também na física e linguagem de programação. Um bom exemplo
+      disso seria gostar de deduzir formulas a partir de outras, como fiz recentemente
+      com formulas de torque, energia, trabalho, etc.
+    </p>
+    <p class="soft">
+      [Exemplo de como preencher: "Recentemente me interessei em entender por que
+      a soma dos ângulos internos de qualquer triângulo é sempre 180°, e passei um
+      tempo tentando provar isso sozinho antes de checar a demonstração formal."]
+    </p>
+    
+    </div>
+  </div>
+
+  <div class="card bike">
+    <span class="card-label">Mountain bike</span>
+    <h2>Trilhas registradas</h2>
+    <p>
+      Costumava andar de mountain bike e registrar minhas trilhas — é onde acompanho minha
+      evolução e conheço lugares novos. Conclui mais de 15 trilhas diferentes, mantendo
+      por volta de 50 a 70 km.
+    </p>
+    </div>
+  </div>
+
+  </div>
+
+</div>
+</body>
+</html>
